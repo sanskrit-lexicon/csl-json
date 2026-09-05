@@ -1,3 +1,5 @@
+_Created: 15-05-2026 · Last updated: 05-09-2026_
+
 # CLAUDE.md
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
@@ -46,3 +48,5 @@ python2 json_from_babylon.py <dict>
 - **cologne-stardict** sibling repo — Babylon file sources
 - **hwnorm1** sibling repo — headword normalization
 - **csl-orig** sibling repo — source dictionary data
+
+_Dr. Mārcis Gasūns_
