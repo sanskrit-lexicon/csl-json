@@ -1,6 +1,6 @@
 # csl-json
 
-_Created: 29-05-2026 · Last updated: 11-07-2026_
+_Created: 29-05-2026 · Last updated: 15-09-2026_
 
 JSON build of the Cologne Digital Sanskrit Lexicon (CDSL) dictionaries, part of
 the [sanskrit-lexicon](https://github.com/sanskrit-lexicon) project. This
@@ -48,8 +48,15 @@ The full rebuild is orchestrated by
 Full rebuild:
 
 ```bash
-sh redo.sh
+bash redo.sh
 ```
+
+Use `bash`, not `sh`: the script uses arrays, which `sh` (dash on Debian/Ubuntu) does not support.
+
+If it stops early: since 15-09-2026 ([#15](https://github.com/sanskrit-lexicon/csl-json/pull/15)) the script
+pulls `main` with `git pull --ff-only` (hwnorm1 and csl-orig have no `master` branch) and exits if a
+sibling folder (`../hwnorm1`, `../csl-orig`, `../cologne-stardict`) is missing or a pull fails, instead
+of rebuilding from stale data. Fix the folder it names, or pull that repository by hand, then rerun.
 
 Convert a single dictionary:
 

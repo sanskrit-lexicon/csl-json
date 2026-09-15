@@ -1,4 +1,4 @@
-_Created: 15-05-2026 · Last updated: 05-09-2026_
+_Created: 15-05-2026 · Last updated: 15-09-2026_
 
 # CLAUDE.md
 
@@ -34,8 +34,9 @@ The JSON files in `ashtadhyayi.com/` are used by the [ashtadhyayi.com](https://a
 
 ### Full rebuild
 ```bash
-sh redo.sh
+bash redo.sh
 ```
+Needs bash (arrays). Stops if a sibling folder is missing or `git pull --ff-only origin main` fails — see README "Common commands".
 
 ### Convert a single dictionary
 ```bash
